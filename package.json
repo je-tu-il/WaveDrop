@@ -1,0 +1,14 @@
+{
+  "name": "wavedrop",
+  "version": "1.0.0",
+  "description": "Système de transfert de données et fichiers par son (ultrasons/audio), lumière et vibration",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": ["fsk", "acoustic-data", "ultrasound", "optical-transfer", "vibration", "pwa"],
+  "author": "je-tu-il",
+  "license": "MIT"
+}
