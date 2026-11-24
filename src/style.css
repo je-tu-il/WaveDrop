@@ -393,3 +393,31 @@ footer {
   color: var(--text-muted);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+/* Audio transfer console */
+:root {
+  color-scheme: dark;
+  --bg-primary: #09171f;
+  --bg-secondary: #11252c;
+  --bg-card: #12262e;
+  --bg-card-hover: #1c3740;
+  --border-color: #31515a;
+  --border-glow: #558c96;
+  --accent-cyan: #6eead8;
+  --accent-pink: #b3a6fb;
+  --text-muted: #b1c6cc;
+}
+body { background-image: radial-gradient(ellipse at 50% 0%, #22434b 0%, transparent 57%); }
+.logo-title { color: var(--text-main); letter-spacing: -.045em; }
+.nav-tabs { gap: 6px; border: 1px solid var(--border-color); padding: 5px; border-radius: 16px; }
+.tab-btn { min-width: 0; min-height: 44px; padding-inline: 8px; }
+.tab-btn.active { background: #285059; color: #ebfffb; box-shadow: none; }
+.card { border-radius: 18px; backdrop-filter: none; }
+.btn-primary, .btn-primary:hover { background: var(--accent-cyan); color: #092322; box-shadow: none; }
+.pill-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); }
+.file-dropzone { border-color: #658890; }
+.progress-label { font-variant-numeric: tabular-nums; }
+:where(button, select, textarea, input, [tabindex]):focus-visible { outline: 2px solid var(--accent-cyan); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
